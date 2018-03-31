@@ -124,18 +124,29 @@ window.onclick = function(e){
 /*--- End of Hamburger Menu ---*/
 var accordions = document.getElementsByClassName("accordion");
 for(var i = 0; i < accordions.length; i++){
-	accordions[i].addEventListener("click", openClosePanel);
+	accordions[i].addEventListener("click", function(){
+    this.classList.toggle("active");
+  	var underPanel = this.nextElementSibling;
+  	if(underPanel.style.maxHeight){
+  		underPanel.style.maxHeight = null;
+  	} else {
+  		underPanel.style.maxHeight = underPanel.scrollHeight + "px";
+  	}
+  };
 }
 
-function openClosePanel(){
-	this.classList.toggle("active");
-	var underPanel = this.nextElementSibling;
-	if(underPanel.style.maxHeight){
-		underPanel.style.maxHeight = null;
-	} else {
-		underPanel.style.maxHeight = underPanel.scrollHeight + "px";
-	}
-}
+
+/*--- Toggle Img Caption Show/Hide ---*/
+var imgCaptions = document.getElementsByClassName("img-caption");
+var thirdPageImgs = document.querySelectorAll(".third-page-pics > img");
+thirdPageImgs.forEach(function(image){
+  image.addEventListener("click", function(e){
+    var imgCaption = this.nextElementSibling;
+    if(!e.target.matches(".img-caption")){
+      imgCaption.classList.toggle("hide-caption");
+    }
+  })
+})
 
 /*--- Close all accordion panels on "X" btn click or Modal Window click ---*/
 var modalCloseBtns = document.getElementsByClassName("glyphicon-remove");
