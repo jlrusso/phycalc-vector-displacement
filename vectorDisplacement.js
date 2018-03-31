@@ -132,9 +132,17 @@ for(var i = 0; i < accordions.length; i++){
   	} else {
   		underPanel.style.maxHeight = underPanel.scrollHeight + "px";
   	}
-  };
+  })
 }
 
+/*--- Close Modals ---*/
+var closeModalBtns = document.querySelectorAll(".close-modal-btn");
+closeModalBtns.forEach(function(btn){
+  btn.addEventListener("click", function(){
+    var $modalParent = $(this).parents(".modal");
+    $modalParent.click();
+  })
+})
 
 /*--- Toggle Img Caption Show/Hide ---*/
 var imgCaptions = document.getElementsByClassName("img-caption");
