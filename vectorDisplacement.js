@@ -250,74 +250,7 @@ clearBtn.addEventListener("click", clearFunction);
 function reseTrigAndUnitSelectors(){
 	currentSlideIndex = 0;
 	switchToSlide();
-  $("#solve-for-selector").prop("selectedIndex", 0);
-	$("#trig-selector").prop("selectedIndex", 0);
-	$("#unit-selector").prop("selectedIndex", 0);
 }
-
-/*--- Bind Solve Selector Options with Solve For Radio Btns ---*/
-$("#solve-for-selector").change(function(){
-	switch(true){
-		case $("#theta-selector-btn").is(":selected"):
-			solveTheta.click();
-		break;
-		case $("#d1-selector-btn").is(":selected"):
-			solveDispOne.click();
-		break;
-		case $("#d2-selector-btn").is(":selected"):
-			solveDispTwo.click();
-		break;
-		case $("#dnet-selector-btn").is(":selected"):
-			solveNetDisp.click();
-		break;
-	}
-})
-
-
-/*--- Bind Trig Selector Options with Trig Radio Btns ---*/
-$("#trig-selector").change(function(){
-	switch(true){
-		case $("#sin-selector-btn").is(":selected"):
-			sinRadioBtn.click();
-		break;
-		case $("#cos-selector-btn").is(":selected"):
-			cosRadioBtn.click();
-		break;
-		case $("#tan-selector-btn").is(":selected"):
-			tanRadioBtn.click();
-		break;
-		case $("#arcsin-selector-btn").is(":selected"):
-			arcSinRadioBtn.click();
-		break;
-		case $("#arccos-selector-btn").is(":selected"):
-			arcCosRadioBtn.click();
-		break;
-		case $("#arctan-selector-btn").is(":selected"):
-			arcTanRadioBtn.click();
-		break;
-	}
-})
-
-/*--- Bind Unit Selector Options with Unit Radio Btns ---*/
-$("#unit-selector").change(function(){
-	switch(true){
-		case $("#meter-selector-btn").is(":selected"):
-			meterRadioBtn.click();
-		break;
-		case $("#mile-selector-btn").is(":selected"):
-			mileRadioBtn.click();
-		break;
-		case $("#feet-selector-btn").is(":selected"):
-			feetRadioBtn.click();
-		break;
-		case $("#kilometer-selector-btn").is(":selected"):
-			kiloRadioBtn.click();
-		break;
-		case $("#degree-selector-btn").is(":selected"):
-			degreesRadioBtn.click();
-		break;
-	}
-})
 
 
 for(let i = 0; i < solveForBtns.length; i++){
@@ -359,8 +292,6 @@ function resetAllTrigFuncs(){
 	for(let i = 0; i < trigFunctions.length; i++){
 		trigFunctions[i].disabled = false;
 	}
-	$(".trig-selector-btn").prop("disabled", false);
-	$(".inv-trig-selector-btn").prop("disabled", false);
 }
 
 function solveForFunction(){
@@ -386,7 +317,6 @@ function solveForFunction(){
 			angleField.classList.add("yellow-outline");
 			for(let i = 0; i < trigFunctions.length; i++){
 				trigFunctions[i].disabled = true;
-				$(".trig-selector-btn").prop("disabled", true);
 			}
 		break;
 		case (solveDispOne.checked):
@@ -396,10 +326,8 @@ function solveForFunction(){
 			for(let i = 0; i < inverseTrigFuncs.length; i++){
 				inverseTrigFuncs[i].disabled = true;
 			}
-			$(".inv-trig-selector-btn").prop("disabled", true);
 			cosRadioBtn.checked = false;
 			cosRadioBtn.disabled = true;
-			$("#cos-selector-btn").prop("disabled", true);
 		break;
 		case (solveDispTwo.checked):
 			vectorTwoField.disabled = true;
@@ -408,10 +336,8 @@ function solveForFunction(){
 			for(let i = 0; i < inverseTrigFuncs.length; i++){
 				inverseTrigFuncs[i].disabled = true;
 			}
-			$(".inv-trig-selector-btn").prop("disabled", true);
 			sinRadioBtn.checked = false;
 			sinRadioBtn.disabled = true;
-			$("#sin-selector-btn").prop("disabled", true);
 		break;
 		case (solveNetDisp.checked):
 			netDispField.disabled = true;
@@ -420,10 +346,8 @@ function solveForFunction(){
 			for(let i = 0; i < inverseTrigFuncs.length; i++){
 				inverseTrigFuncs[i].disabled = true;
 			}
-			$(".inv-trig-selector-btn").prop("disabled", true);
 			tanRadioBtn.checked = false;
 			tanRadioBtn.disabled = true;
-			$("#tan-selector-btn").prop("disabled", true);
 		break;
 	}
 }
@@ -578,8 +502,6 @@ function calculateFunction(){
 
 		function clearFunction(){
 			reseTrigAndUnitSelectors();
-			$("#solve-for-selector").prop("selectedIndex", 0);
-			$("#trig-selector").prop("selectedIndex", 0);
 			angleField.placeholder = angleFieldTheta;
 			vectorOneField.placeholder = "(d1)";
 			vectorTwoField.placeholder = "(d2)";
