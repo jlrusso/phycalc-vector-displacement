@@ -876,11 +876,18 @@ input[type="radio"] {
 	outline: none;
 }
 /*--- Modal ---*/
+.modal {
+	background-color: rgba(0,0,0,0.7) !important;
+}
 .modal-content {
+	width: 535px;
+	margin: auto;
 	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
 }
 .modal-header h4 {
-  max-width: 200px;
+  width: 200px;
   margin:auto;
   background-color: #333;
   padding:5px;
@@ -1072,9 +1079,36 @@ button.accordion.active:after {
 	font-size: 1.5rem;
 	color: #F1C40F;
 }
-
+#calc-modal-footer {
+	display: none;
+}
+.close-modal-btn {
+	display: block;
+	position: absolute;
+	left: 50%;
+	bottom: 45px;
+	transform: translateX(-50%);
+}
+.close-modal-btn .glyphicon-remove {
+	border: 2px solid var(--main-yellow-color);
+	font-size: 3rem;
+	font-weight: normal;
+	text-align: center;
+	color: var(--main-yellow-color);
+}
+.glyphicon-remove {
+	width: 100%;
+	margin: auto;
+	cursor: pointer;
+	background-color: transparent;
+	border: 2px solid var(--main-black-color);
+	font-size: 1.5rem;
+	color: var(--main-black-color);
+	text-align: center;
+	transition: 0.2s;
+}
 #calculator-tooltip {
-	opacity: 0;
+	display: none;
 	text-align: center;
 	transition: 0.3s;
 	width: 200px;
@@ -1299,10 +1333,25 @@ button.accordion.active:after {
 	#conversion-container {
 		margin-bottom: 15px;
 	}
+	.modal-content {
+		width: 100%;
+	}
 }
 @media screen and (max-width: 510px){
 	.img-caption p {
 		font-size: 1.5rem;
+	}
+	#calc-modal-footer {
+		display: block;
+	}
+	.close-modal-btn {
+		display: none;
+	}
+	.modal-dialog {
+		margin: 0;
+	}
+	.modal-content {
+		border-radius: 0;
 	}
 }
 @media screen and (max-width: 500px){
@@ -1347,11 +1396,16 @@ button.accordion.active:after {
 	.prev-page-btn {
 		margin-bottom: 10px;
 	}
-	#solve-for-selector,
-	#trig-selector,
-	#unit-selector {
-		width: 85%;
+	.calculator-whole button,
+	#sig-fig-field {
+		height: 35px;
 	}
+}
+@media screen and (max-width: 360px){
+	#calculator-modal h4,
+	.example-modal h4 {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 350px){
 	#search-form {
