@@ -582,14 +582,14 @@ input[type="radio"] {
 
 /*--- Equation Pics and Form Controls ---*/
 #solo-image img {
-  border-radius: 7px;
+  border-radius: 4px;
   box-shadow: 0 0 10px #333;
 }
 #outer-image-container {
   position: relative;
   width: 100%;
   height: 122px;
-  border-radius: 7px !important;
+  border-radius: 4px !important;
   margin-bottom: 19px;
   box-shadow: 0 0 10px #333;
   overflow: hidden !important;
@@ -1206,16 +1206,20 @@ button.accordion.active:after {
 	.module-img img {
 		height: auto;
 	}
+	#third-panel-body {
+		padding-bottom: 0;
+	}
 	.third-page-pics {
 		width: 100%;
 		height: auto;
-		margin: 0 auto 15px !important;
+		margin: 0 auto 20px !important;
 	}
 	.third-page-pics img {
 		height: auto;
 	}
 	.img-caption {
-		font-size: 1.5rem;
+		font-size: 2rem;
+    padding: 7px 5px 0 5px;
 	}
 	#practice-btns-container {
 		width: 85%;
@@ -1314,12 +1318,6 @@ button.accordion.active:after {
 	.module-section {
 		width: 100%;
 	}
-	#third-pics-row {
-		width: 100%;
-	}
-	.third-page-pics {
-		padding: 0;
-	}
 	.input-option-input {
 		display: block;
 	}
@@ -1332,6 +1330,11 @@ button.accordion.active:after {
 		margin-bottom: 15px;
 	}
 }
+@media screen and (max-width: 510px){
+	.img-caption p {
+		font-size: 1.5rem;
+	}
+}
 @media screen and (max-width: 500px){
 	#outer-image-container,
 	#solo-image img {
@@ -1340,11 +1343,6 @@ button.accordion.active:after {
 	.slide-arrow-btn {
 		width:100px;
 		padding:8px;
-	}
-}
-@media screen and (max-width: 475px){
-	.img-caption {
-		width: 95%;
 	}
 }
 @media screen and (max-width: 450px){
@@ -1367,7 +1365,7 @@ button.accordion.active:after {
 		width: 35px;
 	}
 	.img-caption p {
-		font-size: 1.2rem;
+		font-size: 1.35rem;
 	}
   #bottom-pager li a {
     width: 100%;
