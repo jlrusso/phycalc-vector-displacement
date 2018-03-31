@@ -427,47 +427,16 @@ a.next-page:hover .glyphicon-chevron-right {
 #deg-symbol {
   display: none;
 }
-
-.unit-selection,
-.unit-selection2,
-.trig-selection,
-.trig-selection2,
-.solve-for-selection,
-.solve-for-selection2 {
-  background: #333 !important;
-  color: #F1C40F !important;
-  font-weight: normal !important;
-  border-radius: 5px;
-}
-
 .solve-for-selection,
 .trig-selection,
 .unit-selection {
   padding: 10px 10px 5px;
   margin-bottom: 5px;
   vertical-align: middle;
-}
-
-.solve-for-selection2,
-.trig-selection2,
-.unit-selection2 {
-	display: none;
-	padding: 5px 8px 5px;
-	margin-bottom: 5px;
-	vertical-align: middle;
-}
-
-#solve-for-selector,
-#trig-selector,
-#unit-selector {
-	display: none;
-	width: 90%;
-	max-width: 430px;
-	background-color: var(--main-black-color);
-	border: 1.5px solid var(--main-yellow-color);
-	border-radius: 4px;
-	padding: 5px 10px;
-	margin-left: 5px;
+	background: #333 !important;
+  color: #F1C40F !important;
+  font-weight: normal !important;
+  border-radius: 5px;
 }
 /*--- BADGES ---*/
 .badge {
@@ -484,7 +453,9 @@ a.next-page:hover .glyphicon-chevron-right {
   -moz-user-select:none;
   -ms-user-select:none;
 }
-
+.radio-btn:last-child {
+	margin-right: 5px;
+}
 .radio-btn input {
   display:none;
 }
@@ -1111,6 +1082,13 @@ button.accordion.active:after {
 /*--- End of Calculator ---*/
 
 @media screen and (max-width: 1200px){
+	.solve-for-selection,
+	.trig-selection,
+	.unit-selection {
+		width: auto;
+		white-space: nowrap;
+		overflow-x: scroll !important;
+	}
 	.form-control {
 		padding: 17px 10px;
 	}
@@ -1268,9 +1246,6 @@ button.accordion.active:after {
 		margin: 0 auto 10px;
 		font-size: 1.7rem;
 	}
-	.checkmark {
-		font-size: 14px;
-	}
 	#conversion-container {
 		width: 95.5%;
 		margin: auto;
@@ -1294,21 +1269,6 @@ button.accordion.active:after {
 	}
 	.section-heading {
 		float: none;
-	}
-	.solve-for-selection,
-	.trig-selection,
-	.unit-selection {
-		display: none;
-	}
-	.solve-for-selection2,
-	.trig-selection2,
-	.unit-selection2 {
-		display: block;
-	}
-	#solve-for-selector,
-	#trig-selector,
-	#unit-selector {
-		display: inline-block;
 	}
 	#outer-image-container,
 	#solo-image img {
