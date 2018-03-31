@@ -453,7 +453,7 @@
 					<div class="modal-dialog">
 						<div class="modal-content">
 							<div class="modal-header">
-								<h4 class="text-center">Net Displacement</h4>
+								<h4 class="text-center">Angle Displacement</h4>
 							</div>
 							<div class="modal-body">
 								<button class="accordion first-accordion"><strong>Problem</strong></button>
@@ -577,7 +577,7 @@
 					                <button type="button" class="trig-btn">tan</button>
 					            </div>
 					            <div class="col-fourth">
-					                <button type="button pi-btn" class="reg-btn">&pi;</button>
+					                <button type="button" class="pi-btn reg-btn">&pi;</button>
 					            </div>
 					        </div>
 					        <div class="row">
@@ -675,16 +675,19 @@
 					                <button type="button" id="delete-btn">Del</button>
 					            </div>
 					            <div class="col-fourth">
-					                <input type="number" id="sig-fig-field" placeholder="sigfigs"/>
+					                <input type="number" id="sig-fig-field" placeholder="SD#"/>
 					            </div>
 					        </div>
 					    </div>
 									<div id="calculator-tooltip"></div>
 							</div>
-						<div class="modal-footer text-center">
+						<div class="modal-footer text-center" id="calc-modal-footer">
 							<button type="button" class="btn glyphicon glyphicon-remove" data-dismiss="modal"></button>
 						</div>
 					</div>
+				</div>
+				<div class="close-modal-btn">
+					<span class="btn glyphicon glyphicon-remove"></span>
 				</div>
 			</div>
 			<!-- End of Calculator Modal -->
