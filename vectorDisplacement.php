@@ -94,19 +94,19 @@
 										<span><b>Unit:&nbsp;</b></span>
 										<label class="radio-btn">
 										 	<input type="radio" class="units" name="radio-three" units="m" id="meter-radio-btn"/>
-										    <span class="checkmark">Meters</span> |
+										    <span class="checkmark">meters</span> |
 										</label>
 										<label class="radio-btn">
 										    <input type="radio" class="units" name="radio-three" units="mi" id="mile-radio-btn"/>
-										    <span class="checkmark">Miles</span> |
+										    <span class="checkmark">miles</span> |
 										</label>
 										<label class="radio-btn">
 										    <input type="radio" class="units" name="radio-three" units="ft" id="feet-radio-btn"/>
-										    <span class="checkmark">Feet</span> |
+										    <span class="checkmark">feet</span> |
 										</label>
 										<label class="radio-btn">
 										    <input type="radio" class="units" name="radio-three" units="km" id="kilometer-radio-btn"/>
-										    <span class="checkmark">Kilometers</span>
+										    <span class="checkmark">kilometers</span>
 										</label>
 										<label class="radio-btn">
 										    <input type="radio" class="units" name="radio-three" units="km" id="degrees-radio-btn"/>
