@@ -24,8 +24,8 @@
 					<h2 class="animated bounceInDown section-heading">2D Displacement</h2>
 					<div class="pages-nav animated bounceInDown" id="top-pager">
 						<ul class="pager">
-							<li><a href="displacement.php" class="prev-page-btn"><span class="glyphicon glyphicon-chevron-left"></span>Previous: Displacement</a></li>
-							<li><a href="velocity.php" class="next-page-btn">Next: Velocity<span class="glyphicon glyphicon-chevron-right"></span></a></li>
+							<li><a href="/displacement" class="prev-page-btn"><span class="glyphicon glyphicon-chevron-left"></span>Previous: Displacement</a></li>
+							<li><a href="/velocity" class="next-page-btn">Next: Velocity<span class="glyphicon glyphicon-chevron-right"></span></a></li>
 						</ul>
 					</div>
 				</div>
@@ -241,10 +241,9 @@
 
 			<div class="line-divider"></div>
 
-			<?php 
+			<?php
 				include_once "practice.php";
 			?>
-
 
 			<div class="modal fade example-modal" id="my-modal-one" role="dialog">
 				<div class="modal-dialog">
@@ -409,8 +408,8 @@
 
 
 			<ul class="pager text-center" id="bottom-pager">
-				<li><a href="displacement.php" class="prev-page-btn"><span class="glyphicon glyphicon-chevron-left"></span>Previous: Displacement</a></li>
-				<li><a href="velocity.php" class="next-page-btn">Next: Velocity<span class="glyphicon glyphicon-chevron-right"></span></a></li>
+				<li><a href="/displacement" class="prev-page-btn"><span class="glyphicon glyphicon-chevron-left"></span>Previous: Displacement</a></li>
+				<li><a href="/velocity" class="next-page-btn">Next: Velocity<span class="glyphicon glyphicon-chevron-right"></span></a></li>
 			</ul>
 
 	</section>
