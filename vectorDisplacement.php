@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>PhyCalc | 2D Displacement</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="description" content="Here, we cover the differences between distance and 2d displacement and enable you to solve your own practice problems">
+	<title>IP | 2D Displacement</title>
+	<link rel="shortcut icon" href="/img/ip-logo.ico" type="image/ico">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
@@ -14,7 +16,7 @@
 <body>
 
 	<?php
-		include_once "navSearch.php";
+		include_once "nav-template.php";
 	?>
 
 	<section id="main-content">
@@ -24,8 +26,8 @@
 					<h2 class="animated bounceInDown section-heading">2D Displacement</h2>
 					<div class="pages-nav animated bounceInDown" id="top-pager">
 						<ul class="pager">
-							<li><a href="/displacement" class="prev-page-btn"><span class="glyphicon glyphicon-chevron-left"></span>Previous: Displacement</a></li>
-							<li><a href="/velocity" class="next-page-btn">Next: Velocity<span class="glyphicon glyphicon-chevron-right"></span></a></li>
+							<li><a href="displacement.php" class="prev-page-btn"><span class="glyphicon glyphicon-chevron-left"></span>Previous: Displacement</a></li>
+							<li><a href="velocity.php" class="next-page-btn">Next: Velocity<span class="glyphicon glyphicon-chevron-right"></span></a></li>
 						</ul>
 					</div>
 				</div>
@@ -142,12 +144,12 @@
 									</div>
 									<div id="outer-image-container">
 										<div id="inner-image-container">
-											<img src="../img/newSinEquation.png" class="img-responsive slide" alt="Sin Equation"/>
-											<img src="../img/newCosEquation.png" class="img-responsive slide" alt="Cos Equation"/>
-											<img src="../img/newTanEquation.png" class="img-responsive slide" alt="Tan Equation"/>
-											<img src="../img/newInvSinEquation.png" class="img-responsive slide" alt="Inv Sin Equation"/>
-											<img src="../img/newInvCosEquation.png" class="img-responsive slide" alt="Inv Cos Equation"/>
-											<img src="../img/newInvTanEquation.png" class="img-responsive slide" alt="Inv Tan Equation"/>
+											<img src="../img/newSinEquation.PNG" class="img-responsive slide" alt="Sin Equation"/>
+											<img src="../img/newCosEquation.PNG" class="img-responsive slide" alt="Cos Equation"/>
+											<img src="../img/newTanEquation.PNG" class="img-responsive slide" alt="Tan Equation"/>
+											<img src="../img/newInvSinEquation.PNG" class="img-responsive slide" alt="Inv Sin Equation"/>
+											<img src="../img/newInvCosEquation.PNG" class="img-responsive slide" alt="Inv Cos Equation"/>
+											<img src="../img/newInvTanEquation.PNG" class="img-responsive slide" alt="Inv Tan Equation"/>
 										</div>
 										<div id="slide-bar-indicators">
 											<div class="slide-bar"></div>
@@ -159,7 +161,7 @@
 										</div>
 									</div>
 									<div id="solo-image">
-										<img src="../img/newTrigTriangle.png" class="img-responsive" alt="Trig Triangle"/>
+										<img src="../img/newTrigTriangle.PNG" class="img-responsive" alt="Trig Triangle"/>
 									</div>
 								</div>
 							</div>
@@ -205,7 +207,7 @@
 								</div>
 							</div>
 							<div class="module-img">
-								<img src="../img/pythagoreanTriangle.png" class="img-responsive" alt="Pythagorean Triangle">
+								<img src="../img/pythagoreanTriangle.PNG" class="img-responsive" alt="Pythagorean Triangle">
 							</div>
 						</div>
 					</div>
@@ -216,7 +218,7 @@
 				<div class="panel-body" id="third-panel-body">
 					<div class="row animated fadeInLeft" id="third-pics-row">
 						<div class="col-sm-4 third-page-pics">
-							<img src="../img/baseballhit.jpg" alt="Baseball Hit" class="img-responsive">
+							<img src="../img/baseballHit.jpg" alt="Baseball Hit" class="img-responsive">
 							<div class="img-caption">
 								<p>The average launch angle — the angle at which the ball flies after being hit — was 11.5 degrees in 2016. <a href="https://www.washingtonpost.com/graphics/sports/mlb-launch-angles-story/?utm_term=.1f99bf4dba82" target="_blank"/> (Source)</a></p>
 							</div>
@@ -262,7 +264,7 @@
 							</div>
 							<button class="accordion"><strong>Illustration</strong></button>
 							<div class="modal-panel">
-									<img src="../img/vector-accordion-pic.png" alt="Vector Image"/>
+									<img src="../img/vector-accordion-pic.PNG" alt="Vector Image"/>
 							</div>
 							<button class="accordion"><strong>Given Variables</strong></button>
 							<div class="modal-panel">
@@ -314,7 +316,7 @@
 									</div>
 									<button class="accordion"><strong>Illustration</strong></button>
 									<div class="modal-panel">
-										<img src="img/vectorDisplacementAccordionImg2.png" alt="Vector Image"/>
+										<img src="img/vectorDisplacementAccordionImg2.PNG" alt="Vector Image"/>
 									</div>
 									<button class="accordion"><strong>Given Variables</strong></button>
 									<div class="modal-panel">
@@ -369,7 +371,7 @@
 									</div>
 									<button class="accordion"><strong>Illustration</strong></button>
 									<div class="modal-panel">
-										<img src="img/vectorDisplacementAccordionImg3.png" alt="Vector Image"/>
+										<img src="img/vectorDisplacementAccordionImg3.PNG" alt="Vector Image"/>
 									</div>
 									<button class="accordion"><strong>Given Variables</strong></button>
 									<div class="modal-panel">
