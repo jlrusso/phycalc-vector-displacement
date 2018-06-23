@@ -262,10 +262,6 @@
 									</p>
 								</div>
 							</div>
-							<button class="accordion"><strong>Illustration</strong></button>
-							<div class="modal-panel">
-									<img src="../img/vector-accordion-pic.PNG" alt="Vector Image"/>
-							</div>
 							<button class="accordion"><strong>Given Variables</strong></button>
 							<div class="modal-panel">
 								<p>
@@ -275,6 +271,10 @@
 										<li><b>Displacement</b> : 200 meters northeast</li>
 									</ul>
 								</p>
+							</div>
+							<button class="accordion"><strong>Illustration</strong></button>
+							<div class="modal-panel">
+									<img src="../img/vector-accordion-pic.PNG" alt="Vector Image"/>
 							</div>
 							<button class="accordion last-accordion"><strong>Solution:</strong></button>
 							<div class="modal-panel">
@@ -314,10 +314,6 @@
 											Jim wondered off from the campsite like Tom, but instead he walked 115 meters due east and then 75 meters due north. What is his displacement from the starting point?
 										</p>
 									</div>
-									<button class="accordion"><strong>Illustration</strong></button>
-									<div class="modal-panel">
-										<img src="img/vectorDisplacementAccordionImg2.PNG" alt="Vector Image"/>
-									</div>
 									<button class="accordion"><strong>Given Variables</strong></button>
 									<div class="modal-panel">
 										<p>
@@ -328,6 +324,10 @@
 												<li><b>Unknown Variable</b> : hypotenuse / net displacement</li>
 											</ul>
 										</p>
+									</div>
+									<button class="accordion"><strong>Illustration</strong></button>
+									<div class="modal-panel">
+										<img src="img/vectorDisplacementAccordionImg2.PNG" alt="Vector Image"/>
 									</div>
 									<button class="accordion last-accordion"><strong>Solution</strong></button>
 									<div class="modal-panel">
@@ -369,10 +369,6 @@
 											Fred ran 30 yards east with the football towards the sideline and then made a sharp cut north towards the endzone, running 40 more yards to get a touchdown. What would the angle be if he ran directly from the starting point to point at which he entered the endzone?
 										</p>
 									</div>
-									<button class="accordion"><strong>Illustration</strong></button>
-									<div class="modal-panel">
-										<img src="img/vectorDisplacementAccordionImg3.PNG" alt="Vector Image"/>
-									</div>
 									<button class="accordion"><strong>Given Variables</strong></button>
 									<div class="modal-panel">
 										<p>
@@ -381,6 +377,10 @@
 												<li><b>Second Vector</b> : 40 meters north</li>
 											</ul>
 										</p>
+									</div>
+									<button class="accordion"><strong>Illustration</strong></button>
+									<div class="modal-panel">
+										<img src="img/vectorDisplacementAccordionImg3.PNG" alt="Vector Image"/>
 									</div>
 									<button class="accordion last-accordion"><strong>Solution</strong></button>
 									<div class="modal-panel">
