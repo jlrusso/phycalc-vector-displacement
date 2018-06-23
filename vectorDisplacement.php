@@ -410,8 +410,8 @@
 
 
 			<ul class="pager text-center" id="bottom-pager">
-				<li><a href="/displacement" class="prev-page-btn"><span class="glyphicon glyphicon-chevron-left"></span>Previous: Displacement</a></li>
-				<li><a href="/velocity" class="next-page-btn">Next: Velocity<span class="glyphicon glyphicon-chevron-right"></span></a></li>
+				<li><a href="displacement.php" class="prev-page-btn"><span class="glyphicon glyphicon-chevron-left"></span>Previous: Displacement</a></li>
+				<li><a href="velocity.php" class="next-page-btn">Next: Velocity<span class="glyphicon glyphicon-chevron-right"></span></a></li>
 			</ul>
 
 	</section>
